@@ -6,87 +6,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/inicio_salar"
-    tools:context=".InicioSesion">
+    tools:context=".VerifUsuario">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="70dp"
         android:src="@mipmap/postal_salar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="500dp"
+        android:layout_width="330dp"
+        android:layout_height="400dp"
         android:orientation="vertical"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="35dp"
-            android:text="Inicio de Sesión"
+            android:text="Verificación de Usuario"
             android:textAlignment="center"
-            android:textSize="30dp"
-            android:textStyle="bold"/>
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="¡Ven y únete a nuestra comunidad!"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="vertical">
 
             <EditText
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/edit_text2"
                 android:paddingStart="20dp"
-                android:textColor="#04608B"
-                android:text="Nombre de Usuario"
-                android:textAlignment="textStart" />
-
-            <EditText
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Correo Electrónico"
                 android:textAlignment="textStart"
-                android:paddingStart="20dp"
-                android:textColor="#04608B"
-                android:text="Contraseña"
-                android:background="@drawable/edit_text"/>
+                android:textColor="#6CA9C2"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="60dp">
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:textAlignment="center"
-                android:layout_gravity="center"
-                android:text="¿Olvidó su contraseña?"
-                android:textColor="@color/black"/>
+            android:layout_marginTop="110dp"
+            android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:background="@drawable/button_enviar"
+                android:text="Enviar"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="Ingresar"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
