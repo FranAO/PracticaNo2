@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica">
         <activity
+            android:name=".RecuperarContrasena"
+            android:exported="false" />
+        <activity
+            android:name=".VerifUsuario"
+            android:exported="false" />
+        <activity
             android:name=".Ingresar"
             android:exported="false" />
         <activity
